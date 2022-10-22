@@ -1,5 +1,32 @@
-h1 {
-    font-size: 120;
-    color: blue;
-
+h1.h1-header {
+   color: red;
 }
+
+#header-img {
+    width: 250px;
+    height: 100px;
+}
+body {
+  background-color:aquamarine;
+  border-style: dashed;
+  
+}
+#body-div{
+  background-color:blue
+}
+#footer {
+    height: 50px; /* the footer's total height */
+    color: pink;
+    align-self: bottom;
+  }
+  
+  #footer-content {
+    background-color: #f3e5f5;
+    border: 1px solid #ab47bc;
+    height: 32px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
+    padding: 8px;
+  }
+
+  ul {
+    list-style-type: square;
+  }
