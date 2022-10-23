@@ -11,9 +11,7 @@ body {
   border-style: dashed;
   
 }
-#body-div{
-  background-color:blue
-}
+
 #footer {
     height: 50px; /* the footer's total height */
     color: pink;
