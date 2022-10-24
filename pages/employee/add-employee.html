@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="/resources/style.css">
         <meta charset="UTF-8"/>
         <meta lang="pl-PL"/>
-        <title>MP01 - Employees</title>
+        <title>MP01 - Add Employees</title>
     </head>
     
    
@@ -16,7 +16,7 @@
            
             <nav>
                 <ul>
-                    <li><a href="index.html">Strona Główna</a></li> 
+                    <li><a href="/index.html">Strona Główna</a></li> 
                     <li><a href="/pages/cars/cars.html">Auta</a></li> 
                     <li><a href="/pages/employee/list.html">Mechanicy</a></li>
                     <li><a href="/pages/repairs/repairs.html">Naprawy</a></li>      
@@ -24,27 +24,15 @@
             </nav>
         </header>
         <main>
-           <table>
-            <tr>
-                <th>Imię</th>
-                <th>Nazwisko</th>
-                <th>Numer Telefonu</th>
-                <th>Adres</th>
-                <th>Akcje</th>
-            </tr>
-            <tr>
-                <td>Karol</td>
-                <td>Sobotka</td>
-                <td>797169904</td>
-                <td>Maczka 30, 05-250 Radzymin</td>
-                <td><ul>
-                    <li><a href="">Dodaj Naprawę</a></li>
-                    <li>Usuń Pracownika</li>
-                    <li>Edytuj Pracownika</li>
-                </ul></td>
-            </tr>
-           </table>
-           <p><a href="/pages/employee/add-employee.html">Dodaj nowego pracownika</a></p>
+         <h1>Nowy Pracownik</h1>
+         <form>
+           <label for="firstName">* Imię: </label> 
+           <input type="text" name="firstName" id="firstName" required/>
+           <span id="errorFirstName"></span>
+           <label for="lastName">* Nazwisko: </label> <input type="text" name="lastName" id="lastName" required/>
+           <label for="phoneNumber">Numer telefonu: +48</label> <input type="phoneNumber" name="phoneNumber" id="phoneNumber" maxlength="9" />
+           <label for="address">* Adres:</label> <input type="text" name="address" id="address" required/>
+         </form>
         </main>
         <footer >
             <a id="footer-a">Karol Sobotka s20439@pjwstk.edu.pl</a>

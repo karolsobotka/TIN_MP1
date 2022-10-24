@@ -16,7 +16,7 @@
            
             <nav>
                 <ul>
-                    <li><a href="index.html">Strona Główna</a></li> 
+                    <li><a href="/index.html">Strona Główna</a></li> 
                     <li><a href="/pages/cars/cars.html">Auta</a></li> 
                     <li><a href="/pages/employee/list.html">Mechanicy</a></li>
                     <li><a href="/pages/repairs/repairs.html">Naprawy</a></li>      
@@ -24,27 +24,27 @@
             </nav>
         </header>
         <main>
-           <table>
-            <tr>
-                <th>Imię</th>
-                <th>Nazwisko</th>
-                <th>Numer Telefonu</th>
-                <th>Adres</th>
-                <th>Akcje</th>
-            </tr>
-            <tr>
-                <td>Karol</td>
-                <td>Sobotka</td>
-                <td>797169904</td>
-                <td>Maczka 30, 05-250 Radzymin</td>
-                <td><ul>
-                    <li><a href="">Dodaj Naprawę</a></li>
-                    <li>Usuń Pracownika</li>
-                    <li>Edytuj Pracownika</li>
-                </ul></td>
-            </tr>
-           </table>
-           <p><a href="/pages/employee/add-employee.html">Dodaj nowego pracownika</a></p>
+         <h1>Nowe auto</h1>
+         <form>
+           <label for="maker">* Marka: </label>
+           <input type="text" name="maker" id="maker" required/>
+           <span id="errorMaker"></span>
+           
+           <label for="model">* Model: </label>
+           <input type="text" name="model" id="model" required/>
+           <span id="errorModel"></span>
+           
+           <label for="car-plates">* Numer rejestracyjny:</label> 
+           <input type="text" name="plates" id="car-plates" required/>
+           <span id="errorCarPlates"></span>
+           
+            <div>
+                <input type="submit" value="Dodaj"/>
+                <a href="/index.html">Anuluj</a>
+                <p id="errorsSummary"></p>
+            </div>
+           
+         </form>
         </main>
         <footer >
             <a id="footer-a">Karol Sobotka s20439@pjwstk.edu.pl</a>
