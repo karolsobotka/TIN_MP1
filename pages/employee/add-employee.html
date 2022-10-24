@@ -3,7 +3,7 @@
     <head>
         <link rel="stylesheet" href="/resources/style.css">
         <meta charset="UTF-8"/>
-        <meta lang="pl-PL"/>
+        <meta lang="pl"/>
         <title>MP01 - Add Employees</title>
     </head>
     
@@ -12,7 +12,7 @@
         <header id="header">
             <h1 class="h1-header">Pan Samochodzik - panel administracyjny</h1>
             
-            <img src="/resources/images/mechanik.jpg" id="header-img"/>
+            <img src="/resources/images/mechanik.jpg" id="header-img" alt="Pan Samochodzik logo"/>
            
             <nav>
                 <ul>
@@ -32,7 +32,14 @@
            <label for="lastName">* Nazwisko: </label> <input type="text" name="lastName" id="lastName" required/>
            <label for="phoneNumber">Numer telefonu: +48</label> <input type="phoneNumber" name="phoneNumber" id="phoneNumber" maxlength="9" />
            <label for="address">* Adres:</label> <input type="text" name="address" id="address" required/>
+
+           <div>
+            <input type="submit" value="Dodaj"/>
+            <a href="/index.html">Anuluj</a>
+            <p id="errorsSummary"></p>
+        </div>
          </form>
+
         </main>
         <footer >
             <a id="footer-a">Karol Sobotka s20439@pjwstk.edu.pl</a>

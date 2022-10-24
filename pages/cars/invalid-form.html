@@ -2,9 +2,8 @@
 <html>
     <head>
         <link rel="stylesheet" href="/resources/style.css">
-        <meta charset="utf-8"/>
-        <meta lang="PL"/>
-
+        <meta charset="UTF-8"/>
+        <meta lang="pl-PL"/>
         <title>MP01 - Add Cars</title>
     </head>
     
@@ -13,7 +12,7 @@
         <header id="header">
             <h1 class="h1-header">Pan Samochodzik - panel administracyjny</h1>
             
-            <img src="/resources/images/mechanik.jpg" id="header-img" alt="Pan Samochodzik logo"/>
+            <img src="/resources/images/mechanik.jpg" id="header-img"/>
            
             <nav>
                 <ul>
@@ -29,20 +28,20 @@
          <form>
            <label for="maker">* Marka: </label>
            <input type="text" name="maker" id="maker" required/>
-           <span id="errorMaker"></span>
+           <span id="errorMaker">Pole jest wymagane</span>
            
            <label for="model">* Model: </label>
            <input type="text" name="model" id="model" required/>
-           <span id="errorModel"></span>
+           <span id="errorModel">Pole jest wymagane</span>
            
            <label for="car-plates">* Numer rejestracyjny:</label> 
            <input type="text" name="plates" id="car-plates" required/>
-           <span id="errorCarPlates"></span>
+           <span id="errorCarPlates">Pole jest wymagane</span>
            
             <div>
                 <input type="submit" value="Dodaj"/>
                 <a href="/index.html">Anuluj</a>
-                <p id="errorsSummary"></p>
+                <p id="errorsSummary">Formularz zawiera błędy</p>
             </div>
            
          </form>

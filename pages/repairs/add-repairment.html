@@ -2,10 +2,9 @@
 <html>
     <head>
         <link rel="stylesheet" href="/resources/style.css">
-        <meta charset="utf-8"/>
-        <meta lang="PL"/>
-
-        <title>MP01 - Add Cars</title>
+        <meta charset="UTF-8"/>
+        <meta lang="pl"/>
+        <title>MP01 - Add Employees</title>
     </head>
     
    
@@ -25,26 +24,19 @@
             </nav>
         </header>
         <main>
-         <h1>Nowe auto</h1>
+         <h1>Nowa naprawa</h1>
          <form>
-           <label for="maker">* Marka: </label>
-           <input type="text" name="maker" id="maker" required/>
-           <span id="errorMaker"></span>
-           
-           <label for="model">* Model: </label>
-           <input type="text" name="model" id="model" required/>
-           <span id="errorModel"></span>
-           
-           <label for="car-plates">* Numer rejestracyjny:</label> 
-           <input type="text" name="plates" id="car-plates" required/>
-           <span id="errorCarPlates"></span>
-           
-            <div>
-                <input type="submit" value="Dodaj"/>
-                <a href="/index.html">Anuluj</a>
-                <p id="errorsSummary"></p>
-            </div>
-           
+            <label for="carName">* Auto: </label> 
+            <input type="text" name="carName" id="carName" required/>
+
+            <label for="mechanic">* Mechanik: </label>
+            <input type="text" name="mechanic" id="mechanic" required/>
+
+            <label for="description">Opis: </label>
+            <input type="text" name="description" id="description" />
+
+            <label for="repairDate">* Data naprawy:</label> <input type="datetime-local" name="repairDate" id="repairDate" required/>
+          
          </form>
         </main>
         <footer >

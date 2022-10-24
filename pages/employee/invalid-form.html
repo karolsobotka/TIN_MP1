@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/resources/style.css">
+        <meta charset="UTF-8"/>
+        <meta lang="pl-PL"/>
+        <title>MP01 - Add Employee</title>
+    </head>
+    
+   
+    <body>
+        <header id="header">
+            <h1 class="h1-header">Pan Samochodzik - panel administracyjny</h1>
+            
+            <img src="/resources/images/mechanik.jpg" id="header-img"/>
+           
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Strona Główna</a></li> 
+                    <li><a href="/pages/cars/cars.html">Auta</a></li> 
+                    <li><a href="/pages/employee/list.html">Mechanicy</a></li>
+                    <li><a href="/pages/repairs/repairs.html">Naprawy</a></li>      
+                 </ul>
+            </nav>
+        </header>
+        <main>
+         
+         
+            <h1>Nowy Pracownik</h1>
+            <form>
+              <label for="firstName">* Imię: </label> 
+              <input type="text" name="firstName" id="firstName" required/>
+              <span id="errorFirstName">Pole jest wymagane</span>
+
+              <label for="lastName">* Nazwisko: </label>
+              <input type="text" name="lastName" id="lastName" required/>
+              <span id="errorLastName">Pole jest wymagane</span>
+            
+              <label for="phoneNumber">Numer telefonu: +48</label>
+              <input type="phoneNumber" name="phoneNumber" id="phoneNumber" maxlength="9" />
+                
+              <label for="address">* Adres:</label> <input type="text" name="address" id="address" required/>
+              <span id="errorAddress">Pole jest wymagane</span>
+            </form>
+           
+            <div>
+                <input type="submit" value="Dodaj"/>
+                <a href="/index.html">Anuluj</a>
+                <p id="errorsSummary">Formularz zawiera błędy</p>
+            </div>
+           
+         
+        </main>
+        <footer >
+            <a id="footer-a">Karol Sobotka s20439@pjwstk.edu.pl</a>
+        </footer>
+    </body>
+   
+
+</html>
+
