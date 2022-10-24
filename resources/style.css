@@ -11,18 +11,29 @@ body {
   border-style: dashed;
   
 }
-
+table{
+  border-color: black;
+  border-style: dotted;
+}
+tr, td, th {
+  border-color: black;
+  border-style: dashed;
+}
+td {
+  align-content: center;
+}
 #footer {
     height: 50px; /* the footer's total height */
     color: pink;
     align-self: bottom;
   }
+
   
-  #footer-content {
-    background-color: #f3e5f5;
-    border: 1px solid #ab47bc;
-    height: 32px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
-    padding: 8px;
+  #footer-a {
+    font-family:Georgia;
+    font-size: large;
+    font-weight: 300;
+
   }
 
   ul {
