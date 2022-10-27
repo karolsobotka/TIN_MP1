@@ -20,11 +20,11 @@
                 <li><a href="/index.html">Strona Główna</a></li> 
                 <li><a href="/pages/cars/cars.html">Auta</a></li> 
                 <li><a href="/pages/employee/list.html">Mechanicy</a></li>
-                <li><a href="/pages/repairs/repairs.html">Naprawy</a></li>      
+                <li><a href="/pages/repairs/repairs.html" class="active">Naprawy</a></li>      
              </ul>
         </nav>
         <main>
-           <table>
+           <table class="table-list">
             <thead>
                 <tr>
                     <th>Auto</th>
@@ -39,14 +39,15 @@
                 <td>Sobotka</td>
                 <td>Uszczelka pod głowicą, wymiana opon</td>
                 <td>20.06.2022r</td>
-                <td><ul>
-                    <li><a href="">Dodaj Opis</a></li>
-                    <li>Usuń naprawę</li>
-                    <li>Edytuj Pracownika</li>
+                <td class="list-actions">
+                <ul>
+                    <li class="list-actions-button-details"><a>Dodaj Opis</a></li>
+                    <li class="list-actions-button-delete">Usuń naprawę</li>
+                    <li class="list-actions-button-edit">Edytuj Pracownika</li>
                 </ul></td>
             </tr>
            </table>
-           <p><a href="/pages/repairs/add-repairment.html">Dodaj nową naprawę</a></p>
+           <p><a href="/pages/repairs/add-repairment.html" class="button-add">Dodaj nową naprawę</a></p>
         </main>
         <footer >
             <a id="footer-a">Karol Sobotka s20439@pjwstk.edu.pl</a>
