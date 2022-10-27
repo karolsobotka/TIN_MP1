@@ -5,7 +5,8 @@
         <meta name="charset" content="UTF-8"/>
         <meta name="language" content="pl-PL"/>
         <meta name="content-type" content="text/html"/>
-        <title>MP01 - Add Employee</title>
+
+        <title>MP01 - Edit Cars</title>
     </head>
     
    
@@ -13,7 +14,7 @@
         <header id="header">
             
             <h1 class="h1-header">Pan Samochodzik - panel administracyjny</h1>
-            <img src="/resources/images/mechanik.jpg" id="header-img" alt="Pan Samochodzik logo" />
+            <img src="/resources/images/mechanik.jpg" id="header-img" alt="Pan Samochodzik logo"/>
         </header>
         <nav>
             <ul>
@@ -24,32 +25,27 @@
              </ul>
         </nav>
         <main>
-         
-         
-            <h1>Nowy Pracownik</h1>
-            <form>
-              <label for="firstName">* Imię: </label> 
-              <input type="text" name="firstName" id="firstName" required/>
-              <span id="errorFirstName">Pole jest wymagane</span>
-
-              <label for="lastName">* Nazwisko: </label>
-              <input type="text" name="lastName" id="lastName" required/>
-              <span id="errorLastName">Pole jest wymagane</span>
-            
-              <label for="phoneNumber">Numer telefonu: +48</label>
-              <input type="tel" name="phoneNumber" id="phoneNumber" maxlength="9" />
-                
-              <label for="address">* Adres:</label> <input type="text" name="address" id="address" required/>
-              <span id="errorAddress">Pole jest wymagane</span>
-            </form>
+         <h1>Edytowanie auta</h1>
+         <form>
+           <label for="maker">* Marka: </label>
+           <input type="text" name="maker" id="maker" value="Audi" required/>
+           <span id="errorMaker"></span>
+           
+           <label for="model">* Model: </label>
+           <input type="text" name="model" id="model" value="RS8" required/>
+           <span id="errorModel"></span>
+           
+           <label for="car-plates">* Numer rejestracyjny:</label> 
+           <input type="text" name="plates" id="car-plates" value="WWL XX2200" required/>
+           <span id="errorCarPlates"></span>
            
             <div>
                 <input type="submit" value="Dodaj"/>
                 <a href="/index.html">Anuluj</a>
-                <p id="errorsSummary">Formularz zawiera błędy</p>
+                <p id="errorsSummary"></p>
             </div>
            
-         
+         </form>
         </main>
         <footer >
             <a id="footer-a">Karol Sobotka s20439@pjwstk.edu.pl</a>

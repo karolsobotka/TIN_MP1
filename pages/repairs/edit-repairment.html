@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="lang" content="pl-PL"/>
         <link rel="stylesheet" href="/css/style.css">
         <meta name="charset" content="UTF-8"/>
-        <meta name="language" content="pl-PL"/>
         <meta name="content-type" content="text/html"/>
-        <title>MP01 - Add Employees</title>
+        <title>MP01 - Edit Employees</title>
     </head>
     
    
@@ -24,19 +24,18 @@
              </ul>
         </nav>
         <main>
-         <h1>Nowa naprawa</h1>
+         <h1>Edytowanie naprawy</h1>
          <form>
             <label for="carName">* Auto: </label> 
-            <input type="text" name="carName" id="carName" required/>
+            <input type="text" name="carName" id="carName" value="Audi RS8, WWL XX2200" required/>
 
             <label for="mechanic">* Mechanik: </label>
-            <input type="text" name="mechanic" id="mechanic" required/>
+            <input type="text" name="mechanic" id="mechanic" value="Sobotka" required/>
 
             <label for="description">Opis: </label>
-            <input type="text" name="description" id="description" />
+            <input type="text" name="description" id="description" value="Uszczelka pod głowicą, wymiana opon" />
 
-            <label for="repairDate">* Data naprawy:</label> <input type="date" name="repairDate" id="repairDate" required/>
-          
+            <label for="repairDate">* Data naprawy:</label> <input type="date" name="repairDate" id="repairDate" value="2022-06-20" required/>
             <div>
                 <input type="submit" value="Dodaj"/>
                 <a href="/index.html">Anuluj</a>
