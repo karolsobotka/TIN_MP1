@@ -3,7 +3,7 @@ html {
     font-family: sans-serif;
 }
 body {
-    min-width: 600px;
+    min-width: 360px;
 }
 img {
     width: 15%;
@@ -25,16 +25,8 @@ header, footer {
 }
 
 header {
-    overflow: auto;
-}
-
-header h1{
-    float: left;
-}
-
-header img {
-    float: right;
-    
+    display:flex;
+    justify-content: space-between;
 }
 
 nav {
@@ -43,13 +35,11 @@ nav {
 
 nav ul{
     padding: 0;
-    overflow: hidden;
     list-style-type: none;
+    display: flex;
 }
 
-nav ul li {
-    float: left;
-}
+
 
 nav ul li a {
     display: inline-block;
@@ -124,7 +114,9 @@ main h2 {
 .list-actions-button-details,
 .list-actions-button-edit,
 .list-actions-button-delete,
-.button-add {
+.button-add,
+.form-button-submit,
+.form-button-cancel {
     border: none;
     border-radius: 5px;
     color: white;
@@ -150,22 +142,28 @@ main h2 {
 .list-actions-button-edit:hover {
     background-color: #f1c40f;
 }
-.list-actions-button-delete {
+.list-actions-button-delete,
+.form-button-cancel {
     background-color: #c0392b;
 }
-.list-actions-button-delete:hover {
+.list-actions-button-delete:hover,
+.form-button-cancel:hover {
     background-color: #e74c3c;
 }
 
-.button-add {
+.button-add,
+.form-button-submit,
+.form-button-cancel {
     padding: 0.5rem 1rem;
 }
 
-.button-add {
+.button-add,
+.form-button-submit {
     background-color: #27ae60;
 }
 
-.button-add:hover {
+.button-add:hover,
+.form-button-submit:hover {
     background-color: #2ecc71;
 }
 
@@ -182,8 +180,8 @@ textarea {
 }
 
 .form {
-    margin-left: 2rem;
-    width:300px;
+    display: grid;
+    grid-template-columns: 150px 300px 1fr;
 }
 
 .form select,
@@ -197,3 +195,75 @@ textarea {
     width: 100%;
 }
 
+.form label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.symbol-required {
+    color:#c0392b;
+}
+
+.form-buttons {
+    grid-column: 1 / span 2;
+}
+
+.form input.error-input,
+.form select.error-input {
+    border: 3px solid #e74c3c;
+}
+
+
+.error-text { 
+    display: block;
+    font-size: 0.85em;
+    line-height: 2.25rem;
+    margin-top: 0.5rem;
+    color: #e74c3c;
+}
+
+@media all and (max-width: 720px){
+
+    header{
+        flex-direction: column;   
+    }
+    header h1{
+        text-align: center;
+    }
+    header img {
+        align-self: center;
+    }
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav ul li{ 
+        flex-basis: 50%;
+        text-align: center;
+
+    }
+    nav ul li a{
+     display: block;   
+    }
+
+    .form {
+        grid-template-columns: 1fr;
+        row-gap: unset;
+        margin-left: unset;
+    }
+
+    .form-buttons {
+        grid-column: 1/1;
+    }
+
+}
+@media all and (max-width: 400px){
+    body, nav, nav ul, header, main, footer{ 
+        margin: 0;
+    }
+
+    nav ul li {
+        flex-basis: 100%;
+    }
+}

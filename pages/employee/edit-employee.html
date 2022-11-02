@@ -5,6 +5,7 @@
         <meta name="charset" content="UTF-8"/>
         <meta name="language" content="pl-PL"/>
         <meta name="content-type" content="text/html"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>MP01 - Edit Employees</title>
     </head>
     
@@ -26,17 +27,17 @@
         <main>
          <h1>Edytowanie Pracownika</h1>
          <form class="form">
-           <label for="firstName">* Imię: </label> 
+           <label for="firstName"> Imię: <span class="symbol-required">*</span></label> 
            <input type="text" name="firstName" id="firstName" value="Karol" required/>
-           <span id="errorFirstName"></span>
-           <label for="lastName">* Nazwisko: </label> <input type="text" name="lastName" id="lastName" value="Sobotka" required/>
+           <span id="errorFirstName" class="error-text"></span>
+           <label for="lastName"> Nazwisko: <span class="symbol-required">*</span> </label> <input type="text" name="lastName" id="lastName" value="Sobotka" required/>
            <label for="phoneNumber">Numer telefonu: +48</label> <input type="tel" name="phoneNumber" id="phoneNumber" maxlength="9" value="797169904"/>
-           <label for="address">* Adres:</label> <input type="text" name="address" id="address" value="05-250 Radzymin, ul. Maczka 30" required/>
+           <label for="address"> Adres: <span class="symbol-required">*</span></label> <input type="text" name="address" id="address" value="05-250 Radzymin, ul. Maczka 30" required/>
 
-           <div>
-            <input type="submit" value="Dodaj"/>
-            <a href="/index.html">Anuluj</a>
-            <p id="errorsSummary"></p>
+           <div class="form-buttons">
+            <input type="submit" value="Dodaj" class="form-button-submit"/>
+            <a href="/index.html" class="form-button-cancel">Anuluj</a>
+            <p id="errorsSummary" class="error-text"></p>
         </div>
          </form>
 

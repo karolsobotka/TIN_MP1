@@ -5,7 +5,7 @@
         <meta name="charset" content="UTF-8"/>
         <meta name="language" content="pl-PL"/>
         <meta name="content-type" content="text/html"/>
-
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>MP01 - Edit Cars</title>
     </head>
     
@@ -27,22 +27,22 @@
         <main>
          <h1>Edytowanie auta</h1>
          <form class="form">
-           <label for="maker">* Marka: </label>
+           <label for="maker">Marka <span class="symbol-required">*</span> </label>
            <input type="text" name="maker" id="maker" value="Audi" required/>
-           <span id="errorMaker"></span>
+           <span id="errorMaker" class="error-text"></span>
            
-           <label for="model">* Model: </label>
+           <label for="model">Model <span class="symbol-required">*</span> </label>
            <input type="text" name="model" id="model" value="RS8" required/>
-           <span id="errorModel"></span>
+           <span id="errorModel" class="error-text"></span>
            
-           <label for="car-plates">* Numer rejestracyjny:</label> 
+           <label for="car-plates">Numer rejestracyjny <span class="symbol-required">*</span></label> 
            <input type="text" name="plates" id="car-plates" value="WWL XX2200" required/>
-           <span id="errorCarPlates"></span>
+           <span id="errorCarPlates" class="error-text"></span>
            
-            <div>
-                <input type="submit" value="Dodaj"/>
-                <a href="/index.html">Anuluj</a>
-                <p id="errorsSummary"></p>
+            <div class="form-buttons">
+                <input type="submit" value="Dodaj" class="form-button-submit"/>
+            <a href="/index.html" class="form-button-cancel">Anuluj</a>
+            <p id="errorsSummary" class="error-text"></p>
             </div>
            
          </form>

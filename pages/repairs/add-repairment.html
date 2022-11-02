@@ -5,6 +5,7 @@
         <meta name="charset" content="UTF-8"/>
         <meta name="language" content="pl-PL"/>
         <meta name="content-type" content="text/html"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>MP01 - Add Employees</title>
     </head>
     
@@ -26,21 +27,21 @@
         <main>
          <h1>Nowa naprawa</h1>
          <form class="form">
-            <label for="carName">* Auto: </label> 
+            <label for="carName"> Auto  <span class="symbol-required">*</span></label> 
             <input type="text" name="carName" id="carName" required/>
-
-            <label for="mechanic">* Mechanik: </label>
-            <input type="text" name="mechanic" id="mechanic" required/>
-
+            <span error="errorCar" class="error-text"></span>
+            <label for="mechanic">Mechanik <span class="symbol-required">*</span><span error="errorMechanic" class="error-text"></span></label>
+            <input type="text" name="mechanic" id="mechanic" required/><br>
+            
             <label for="description">Opis: </label>
-            <input type="text" name="description" id="description" />
+            <input type="text" name="description" id="description" /><br>
 
-            <label for="repairDate">* Data naprawy:</label> <input type="date" name="repairDate" id="repairDate" required/>
-          
-            <div>
-                <input type="submit" value="Dodaj"/>
-                <a href="/index.html">Anuluj</a>
-                <p id="errorsSummary"></p>
+            <label for="repairDate">Data naprawy: <span class="symbol-required">*</span></label> <input type="date" name="repairDate" id="repairDate" required/>
+            <span error="errorRepairDate" class="error-text"></span>
+            <div class="form-buttons">
+                <input type="submit" value="Dodaj" class="form-button-submit"/>
+            <a href="/index.html" class="form-button-cancel">Anuluj</a>
+            <p id="errorsSummary" class="error-text"></p>
             </div>
          </form>
         </main>

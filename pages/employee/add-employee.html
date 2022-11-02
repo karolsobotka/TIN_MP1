@@ -5,6 +5,7 @@
         <meta name="charset" content="UTF-8"/>
         <meta name="language" content="pl-PL"/>
         <meta name="content-type" content="text/html"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>MP01 - Add Employees</title>
     </head>
     
@@ -26,17 +27,18 @@
         <main>
          <h1>Nowy Pracownik</h1>
          <form class="form">
-           <label for="firstName">* Imię: </label> 
+           <label for="firstName">Imię <span class="symbol-required">*</span></label> 
            <input type="text" name="firstName" id="firstName" required/>
-           <span id="errorFirstName"></span>
-           <label for="lastName">* Nazwisko: </label> <input type="text" name="lastName" id="lastName" required/>
-           <label for="phoneNumber">Numer telefonu: +48</label> <input type="tel" name="phoneNumber" id="phoneNumber" maxlength="9" />
-           <label for="address">* Adres:</label> <input type="text" name="address" id="address" required/>
+           <span id="errorFirstName" class="error-text"></span>
+           <label for="lastName" > Nazwisko <span class="symbol-required">*</span></label> <input type="text" name="lastName" id="lastName" required/><br>
+           <label for="phoneNumber">Numer telefonu: +48</label> <input type="tel" name="phoneNumber" id="phoneNumber" maxlength="9" /><br>
+           <label for="address">Adres: <span class="symbol-required">*</span><span id="errorAddress" class="error-text"></span></label>
+           <input type="text" name="address" id="address" required/>
 
-           <div>
-            <input type="submit" value="Dodaj"/>
-            <a href="/index.html">Anuluj</a>
-            <p id="errorsSummary"></p>
+           <div class="form-buttons">
+            <input type="submit" value="Dodaj" class="form-button-submit"/>
+            <a href="/index.html" class="form-button-cancel">Anuluj</a>
+            <p id="errorsSummary" class="error-text"></p>
         </div>
          </form>
 
