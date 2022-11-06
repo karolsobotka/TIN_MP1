@@ -1,9 +1,14 @@
 html {
-    background-color: #ecf0f1;
+    background-color: #2f2fa2;
     font-family: sans-serif;
+    margin: 0
+
+    
 }
 body {
     min-width: 360px;
+    margin: 0
+    
 }
 img {
     width: 15%;
@@ -11,7 +16,7 @@ img {
 }
 
 header, main, footer {
-    background-color: white;
+    background-color: #2f2fa2;
 }
 
 header, main, footer, nav {
@@ -19,7 +24,7 @@ header, main, footer, nav {
 }
 
 header, footer {
-    background-color: #34495e;
+    background-color: #2f2fa2;
     color: white;
     padding: 1rem;
 }
@@ -27,45 +32,54 @@ header, footer {
 header {
     display:flex;
     justify-content: space-between;
+    border-radius: 1rem;
 }
 
 nav {
-    background-color: #bdc3c7;
+    background-color: #553d67;
 }
 
 nav ul{
     padding: 0;
     list-style-type: none;
     display: flex;
+    border-radius: 1rem;
 }
 
 
 
 nav ul li a {
     display: inline-block;
-    color: #2c3e50;
+    color: #ecf0f1;
     padding: 1rem 2rem;
     text-decoration: none;
+    border-radius: 1rem;
+
 }
 
 nav ul li a:hover{
-    background-color: #d35400;
+    background-color: #99738e;
     color: #ecf0f1;
 }
 
 nav ul li a.active {
-    background-color: #95a5a6;
+    background-color: #f64c72;
     color: #ecf0f1;
 
 }
 
 main {
     padding: 1.5rem;
+    border-radius: 1rem;
+    border-style: double;  
+    border-color: white;
+    color: white;    
 }
 
 footer {
     text-align: center;
-
+    border-radius: 1rem;
+    border-style: dotted;
 }
 
 main h2 {
@@ -75,7 +89,7 @@ main h2 {
 
 .table-list {
     border-collapse: collapse;
-    color: #2c3e50;
+    color: white;
     width: 100%;
 }
 
@@ -87,9 +101,16 @@ main h2 {
 .table-list th, .table-list td {
     padding: 01.5rem;
 }
+.table-list th {
+        background-color: #553d67;
 
-.table-list th, .table-list tbody tr:nth-child(even) {
-    background-color: #ecf0f1;
+}
+
+ .table-list tbody tr:nth-child(even) {
+    background-color: #724f8d;
+}
+.table-list tbody tr:nth-child(odd) {
+    background-color: #99738e;
 }
 
 .list-actions {
@@ -100,7 +121,8 @@ main h2 {
 }
 
 .list-actions li {
-    display: inline-block;
+    display: block;
+    margin: 10px;
 }
 
 .list-actions-button-details,
@@ -124,6 +146,10 @@ main h2 {
     text-align: center;
     font-size: 0.8rem;
 }
+h1{
+    color: white;
+}
+
 
 .list-actions-button-details,
 .list-actions-button-edit {
@@ -131,24 +157,24 @@ main h2 {
 }
 
 .list-actions-button-details{
-    background-color: #2980b9;
+    background-color: #553d67;
 }
 .list-actions-button-details:hover{
-    background-color: #3498db;
+    background-color: #e1a2cf;
 }
 .list-actions-button-edit {
-    background-color: #f39c12;
+    background-color: #553d67;
 }
 .list-actions-button-edit:hover {
-    background-color: #f1c40f;
+    background-color: #e1a2cf;
 }
 .list-actions-button-delete,
 .form-button-cancel {
-    background-color: #c0392b;
+    background-color: #553d67;
 }
 .list-actions-button-delete:hover,
 .form-button-cancel:hover {
-    background-color: #e74c3c;
+    background-color: #e1a2cf;
 }
 
 .button-add,
@@ -182,6 +208,7 @@ textarea {
 .form {
     display: grid;
     grid-template-columns: 150px 300px 1fr;
+    color:white;
 }
 
 .form select,
@@ -213,6 +240,7 @@ textarea {
 .form select.error-input {
     border: 3px solid #e74c3c;
 }
+
 
 
 .error-text { 
@@ -266,4 +294,5 @@ textarea {
     nav ul li {
         flex-basis: 100%;
     }
+    
 }
