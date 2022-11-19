@@ -1,3 +1,0 @@
-- poprawić formularze wszystkie
-- poprawić wyświetlanie tabeli przy mniejszych rozmiarach strony
-- w formularzach poprawic wyskakiwanie błędów i czerwone obramowania
