@@ -102,11 +102,11 @@ main h2 {
     padding: 01.5rem;
 }
 .table-list th {
-        background-color: #553d67;
+    background-color: #553d67;
 
 }
 
- .table-list tbody tr:nth-child(even) {
+.table-list tbody tr:nth-child(even) {
     background-color: #724f8d;
 }
 .table-list tbody tr:nth-child(odd) {
@@ -152,6 +152,7 @@ h1{
 
 
 .list-actions-button-details,
+.list-actions-button-delete,
 .list-actions-button-edit {
     margin-right: 1rem;
 }
