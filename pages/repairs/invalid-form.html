@@ -26,22 +26,24 @@
         </nav>
         </header>
         <main>
+         <h1>Nowa naprawa</h1>
+
          <form class="form">
-            <h1>Nowa naprawa</h1>
             <label for="carName"> Auto:<span class="symbol-required">*</span> </label> 
             <input type="text" name="carName" id="carName" required/>
-            <span id="errorCarName">Pole jest wymagane</span>
+            <span id="errorCarName" class="error-text">Pole jest wymagane</span>
 
             <label for="mechanic"> Mechanik: <span class="symbol-required">*</span></label>
             <input type="text" name="mechanic" id="mechanic" required/>
-            <span id="errorMechanic">Pole jest wymagane</span>
+            <span id="errorMechanic" class="error-text">Pole jest wymagane</span>
 
             <label for="description">Opis: </label>
             <input type="text" name="description" id="description" />
+            <span id="errorDescription" class="error-text"></span>
 
             <label for="repairDate">Data naprawy: <span class="symbol-required">*</span></label> 
             <input type="date" name="repairDate" id="repairDate" required/>
-            <span id="errorDateTime">Pole jest wymagane</span>         
+            <span id="errorDateTime" class="error-text">Pole jest wymagane</span>         
            
             <div class="form-buttons">
                 <input type="submit" value="Dodaj" class="form-button-submit"/>

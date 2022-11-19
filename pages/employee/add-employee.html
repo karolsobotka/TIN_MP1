@@ -30,10 +30,18 @@
            <label for="firstName">Imię <span class="symbol-required">*</span></label> 
            <input type="text" name="firstName" id="firstName" required/>
            <span id="errorFirstName" class="error-text"></span>
-           <label for="lastName" > Nazwisko <span class="symbol-required">*</span></label> <input type="text" name="lastName" id="lastName" required/><br>
-           <label for="phoneNumber">Numer telefonu: +48</label> <input type="tel" name="phoneNumber" id="phoneNumber" maxlength="9" /><br>
-           <label for="address">Adres: <span class="symbol-required">*</span><span id="errorAddress" class="error-text"></span></label>
+
+           <label for="lastName" > Nazwisko <span class="symbol-required">*</span></label>
+            <input type="text" name="lastName" id="lastName" required/>
+            <span id="errorLastName" class="error-text"></span>
+
+           <label for="phoneNumber">Numer telefonu: +48<span class="symbol-not-required"></span></label> 
+           <input type="tel" name="phoneNumber" id="phoneNumber" maxlength="9" />
+           <span id="errorPhoneNumber" class="error-text"></span>
+
+           <label for="address">Adres: <span class="symbol-required">*</span></label>
            <input type="text" name="address" id="address" required/>
+           <span id="errorAddress" class="error-text"></span>
 
            <div class="form-buttons">
             <input type="submit" value="Dodaj" class="form-button-submit"/>

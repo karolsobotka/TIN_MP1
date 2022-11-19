@@ -27,17 +27,22 @@
         <main>
          <h1>Nowa naprawa</h1>
          <form class="form">
-            <label for="carName"> Auto  <span class="symbol-required">*</span></label> 
+            <label for="carName">Auto<span class="symbol-required">*</span></label> 
             <input type="text" name="carName" id="carName" required/>
-            <span error="errorCar" class="error-text"></span>
-            <label for="mechanic">Mechanik <span class="symbol-required">*</span><span error="errorMechanic" class="error-text"></span></label>
-            <input type="text" name="mechanic" id="mechanic" required/><br>
+            <span id="errorCar" class="error-text"></span>
+
+            <label for="mechanic">Mechanik <span class="symbol-required">*</span></label>
+            <input type="text" name="mechanic" id="mechanic" required/>
+            <span id="errorMechanic" class="error-text"></span>
             
             <label for="description">Opis: </label>
-            <input type="text" name="description" id="description" /><br>
+            <input type="text" name="description" id="description" />
+            <span id="errorDescritpion" class="error-text"></span>
 
-            <label for="repairDate">Data naprawy: <span class="symbol-required">*</span></label> <input type="date" name="repairDate" id="repairDate" required/>
-            <span error="errorRepairDate" class="error-text"></span>
+            <label for="repairDate">Data naprawy: <span class="symbol-required">*</span></label>
+             <input type="date" name="repairDate" id="repairDate" required/>
+            <span id="errorRepairDate" class="error-text"></span>
+
             <div class="form-buttons">
               <a href="/pages/repairs/success.html">  <input type="submit" value="Dodaj" class="form-button-submit" /></a>
             <a href="/index.html" class="form-button-cancel">Anuluj</a>
