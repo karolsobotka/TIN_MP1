@@ -6,7 +6,8 @@
         <meta name="language" content="pl-PL"/>
         <meta name="content-type" content="text/html"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script type="application/javascript" src="resources/code/validationCommon.js"></script>
+        <script type="application/javascript" src="/resources/code/validationCommon.js"></script>
+        <script type="application/javascript" src="/resources/code/validateEmpForm.js"></script>
 
         <title>MP01 - Add Employees</title>
     </head>
@@ -28,7 +29,7 @@
         </nav>
         <main>
          <h1>Nowy Pracownik</h1>
-         <form class="form">
+         <form class="form" novalidate onsubmit="return validateFormEmployee();">
            <label for="firstName">Imię <span class="symbol-required">*</span></label> 
            <input type="text" name="firstName" id="firstName" placeholder="2-60 znaków" required/>
            <span id="errorFirstName" class="error-text"></span>
