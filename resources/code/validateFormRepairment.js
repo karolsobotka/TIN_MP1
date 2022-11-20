@@ -4,11 +4,13 @@ function validateFormRepairment() {
     const date = document.getElementById('repairDate');
 
     
-    const errorCar = document.getElementById('errorMaker');
-    const errorMechanic = document.getElementById('errorModel');
+    const errorCar = document.getElementById('errorCar');
+    const errorMechanic = document.getElementById('errorMechanic');
     const errorDate = document.getElementById('errorRepairDate');
  
     const errorSummary  = document.getElementById('errorsSummary');
+
+    console.log(carName+ ", "+mechanic+", "+date+", "+errorSummary+", "+errorCar+", "+errorDate+", "+errorMechanic)
 
     resetErrors([carName, mechanic, date], [errorCar, errorMechanic, errorDate], errorSummary);
 
@@ -42,7 +44,7 @@ function validateFormRepairment() {
 
 
     if(!valid){
-        errorsSummary.innerText = "Formularz zawiera błędy";
+        errorsSummary.innerText = "Formularz zawiera błędy"
     }
 
     return valid;
