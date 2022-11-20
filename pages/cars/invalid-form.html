@@ -28,24 +28,25 @@
          <h1>Nowe auto</h1>
          <form class="form">
            <label for="maker">Marka <span class="symbol-required">*</span></label>
-           <input type="text" name="maker" id="maker" required/>
+           <input type="text" name="maker" id="maker" class="error-input" required/>
            <span id="errorMaker" class="error-text">Pole jest wymagane</span>
            
            <label for="model">Model <span class="symbol-required">*</span> </label>
-           <input type="text" name="model" id="model" required/>
+           <input type="text" name="model" id="model" class="error-input" required/>
            <span id="errorModel" class="error-text">Pole jest wymagane</span>
            
            <label for="car-plates">Numer rejestracyjny <span class="symbol-required">*</span></label> 
-           <input type="text" name="plates" id="car-plates" required/>
+           <input type="text" name="plates" id="car-plates" class="error-input" required/>
            <span id="errorCarPlates" class="error-text">Pole jest wymagane</span>
            
-            <div class="form-buttons">
-                <input type="submit" value="Dodaj" class="form-button-submit"/>
-            <a href="/index.html" class="form-button-cancel">Anuluj</a>
-            <p id="errorsSummary" class="error-text"></p>
-            </div>
+            
            
          </form>
+         <div class="form-buttons">
+            <input type="submit" value="Dodaj" class="form-button-submit"/>
+            <a href="/index.html" class="form-button-cancel">Anuluj</a>
+            <span id="errorsSummary" class="error-text"></span>
+            </div>
         </main>
         <footer >
             <a id="footer-a">Karol Sobotka s20439@pjwstk.edu.pl</a>

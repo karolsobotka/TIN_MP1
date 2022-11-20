@@ -30,19 +30,20 @@
             <h1>Nowy Pracownik</h1>
             <form class="form"> 
               <label for="firstName"> Imię: <span class="symbol-required">*</span></label> 
-              <input type="text" name="firstName" id="firstName" required/>
+              <input type="text" name="firstName" id="firstName" class="error-input" required/>
               <span id="errorFirstName" class="error-text">Pole jest wymagane</span>
 
               <label for="lastName"> Nazwisko: <span class="symbol-required">*</span></label>
-              <input type="text" name="lastName" id="lastName" required/>
+              <input type="text" name="lastName" id="lastName" class="error-input" required/>
               <span id="errorLastName" class="error-text">Pole jest wymagane</span>
             
               <label for="phoneNumber">Numer telefonu: +48</label>
-              <input type="tel" name="phoneNumber" id="phoneNumber" maxlength="9" />
+              <input type="tel" name="phoneNumber" id="phoneNumber" class="error-input" maxlength="9" />
               <span id="errorPhoneNumber" class="error-text"></span>
 
                 
-              <label for="address"> Adres: <span class="symbol-required">*</span></label> <input type="text" name="address" id="address" required/>
+              <label for="address"> Adres: <span class="symbol-required">*</span></label>
+               <input type="text" name="address" id="address" class="error-input" required/>
               <span id="errorAddress" class="error-text">Pole jest wymagane</span>
             </form>
            

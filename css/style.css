@@ -204,11 +204,13 @@ button, input, select, textarea {
 
 textarea {
     overflow: auto;
+    
 }
 
 .form {
     display: grid;
     grid-template-columns: 150px 300px 1fr;
+    gap: 1rem;
     color:white;
 }
 
@@ -233,14 +235,16 @@ textarea {
     color:#c0392b;
 }
 
-.form-buttons {
+ .form-buttons {
     grid-column: 1 / span 2;
+    margin-top: 10px;
 }
 
 .form input.error-input,
 .form select.error-input {
     border: 3px solid #e74c3c;
 }
+
 
 
 
